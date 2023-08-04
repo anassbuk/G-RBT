@@ -6,8 +6,19 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./login.component.css']
 })
 export class LoginComponent implements OnInit {
+  //Take Information from user :
   username : string = '';
+  password : string = '';
+  role     : string ='';
+
+  roles    : string[];
+
   constructor(){
+    this.roles = [
+      'admin',
+      'IT',
+      'RH'
+    ]
 
   }
 
