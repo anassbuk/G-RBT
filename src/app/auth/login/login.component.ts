@@ -27,4 +27,8 @@ export class LoginComponent implements OnInit {
 
   }
 
+  login(){
+    console.log(this.username+" "+this.password+" "+this.role)
+  }
+
 }
